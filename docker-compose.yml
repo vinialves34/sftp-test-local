@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  sftp:
+    image: atmoz/sftp
+    volumes:
+        - ./upload:/home/test/upload
+    ports:
+        - "2222:22"
+    command: test:pass:1001

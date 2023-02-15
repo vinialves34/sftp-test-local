@@ -1,0 +1,15 @@
+{
+  "name": "sftp-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "list:files": "node -e 'require(`./index.js`).listFiles()'",
+    "upload:file": "node -e 'require(`./index.js`).uploadFile(process.argv[1], process.argv[2])'",
+    "delete:file": "node -e 'require(`./index.js`).deleteFile(process.argv[1])'"
+  },
+  "dependencies": {
+    "ssh2-sftp-client": "^9.0.4"
+  }
+}
